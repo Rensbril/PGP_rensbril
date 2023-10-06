@@ -16,6 +16,7 @@ TODO
    - [Sleutels checken + Fingerprint](#sleutels-checken-+-fingerprint)
    - [Bericht versleutelen en ondertekenen](#bericht-versleutelen-en-ondertekenen)
    - [Ontsleutelen bericht](#ontsleutelen-bericht)
+3. [Bronnen](#bronnen)
   
 ### Onderzoek
 
@@ -207,3 +208,15 @@ gpg: Good signature from "Rens <519649@student.saxion.nl>" [ultimate]
 ```
 
 Onderin wordt de handtekening gevalideerd.
+
+### Bronnen
+
+https://support.microsoft.com/en-us/office/encrypt-messages-by-using-s-mime-in-outlook-on-the-web-878c79fc-7088-4b39-966f-14512658f480  
+https://keys.openpgp.org/  
+https://gnupg.org/   
+https://en.wikipedia.org/wiki/Pretty_Good_Privacy  
+https://www.digitalocean.com/community/tutorials/how-to-use-gpg-to-encrypt-and-sign-messages   
+https://unix.stackexchange.com/questions/656205/sks-keyservers-gone-what-to-use-instead  
+https://unix.stackexchange.com/questions/49497/how-do-i-specify-the-keyserver-with-gpg   
+
+
