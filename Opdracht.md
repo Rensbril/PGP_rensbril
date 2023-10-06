@@ -86,7 +86,18 @@ gpg: sending key 5E353E03ACDC134F to hkp://keys.openpgp.org
 ##### Ophalen sleutel klasgenoot
 
 Voor het ophalen van de sleutel van een klasgenoot gebruiken we het volgende commando:
-`gpg --recv-keys --keyserver keys.openpgp.org <keyID>`
+`gpg --auto-key-locate keyserver --locate-keys 518721@student.saxion.nl`
+
+Output:
+```bash
+gpg: key BC14D1AA1E8BC4EF: public key "Sander <518721@student.saxion.nl>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+pub   ed25519 2023-10-06 [SC] [expires: 2026-10-05]
+      361E3525B8772BDB37091BB3BC14D1AA1E8BC4EF
+uid           [ unknown] Sander <518721@student.saxion.nl>
+sub   cv25519 2023-10-06 [E] [expires: 2026-10-05]
+```
 
 
 #### Sleutels checken + Fingerprint
@@ -94,7 +105,7 @@ Voor het ophalen van de sleutel van een klasgenoot gebruiken we het volgende com
 Om de sleutels te checken en de fingerprint te zien gebruiken we de commando's:
 `gpg --list-keys`
 &
-`gpg --fingerprint 9C247C57F171EE561B072D2F5E353E03ACDC134F`
+`gpg --fingerprint 9C247C57F171EE561B072D2F5E353E03ACDC134F of <email>`
 
 Output:
 1. 
@@ -138,7 +149,7 @@ De temperatuur in de middag varieert van 20°C op de Wadden tot 26°C in Zuid-Li
 ##### Versleutelen en ondertekenen
 
 Het commando encrypten en signen is vrij simpel:
-`gpg --encrypt --sign --armor -r 519649@student.saxion.nl message.txt`
+`gpg --encrypt --sign --armor -r 518721@student.saxion.nl message.txt`
 
 -- armor: armor converteert de binaire data naar ascii format. Daarmee is het wat vriendelijker om mee te werken en makkelijker te versturen.
 
@@ -192,7 +203,3 @@ gpg: Good signature from "Rens <519649@student.saxion.nl>" [ultimate]
 ```
 
 Onderin wordt de handtekening gevalideerd.
-
-
-
-
