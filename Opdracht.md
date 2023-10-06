@@ -105,15 +105,18 @@ sub   cv25519 2023-10-06 [E] [expires: 2026-10-05]
 Om de sleutels te checken en de fingerprint te zien gebruiken we de commando's:
 `gpg --list-keys`
 &
-`gpg --fingerprint 9C247C57F171EE561B072D2F5E353E03ACDC134F of <email>`
+`gpg --fingerprint <KEYID> of <email>`
 
 Output:
 1. 
 ```bash
 ❯ gpg --list-keys
-gpg: checking the trustdb
-[keyboxd]
----------
+
+pub   ed25519 2023-10-06 [SC] [expires: 2026-10-05]
+      361E3525B8772BDB37091BB3BC14D1AA1E8BC4EF
+uid           [ unknown] Sander <518721@student.saxion.nl>
+sub   cv25519 2023-10-06 [E] [expires: 2026-10-05]
+
 pub   ed25519 2023-10-06 [SC] [expires: 2026-10-05]
       9C247C57F171EE561B072D2F5E353E03ACDC134F
 uid           [ultimate] Rens Bril <519649@student.saxion.nl>
@@ -122,11 +125,12 @@ sub   cv25519 2023-10-06 [E] [expires: 2026-10-05]
 
 2. 
 ```bash
-❯ gpg --fingerprint 9C247C57F171EE561B072D2F5E353E03ACDC134F
+❯ gpg --fingerprint 518721@student.saxion.nl
 pub   ed25519 2023-10-06 [SC] [expires: 2026-10-05]
-      9C24 7C57 F171 EE56 1B07  2D2F 5E35 3E03 ACDC 134F
-uid           [ultimate] Rens Bril <519649@student.saxion.nl>
+      361E 3525 B877 2BDB 3709  1BB3 BC14 D1AA 1E8B C4EF
+uid           [ unknown] Sander <518721@student.saxion.nl>
 sub   cv25519 2023-10-06 [E] [expires: 2026-10-05]
+
 ```
 
 #### Bericht versleutelen en ondertekenen
