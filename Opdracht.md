@@ -20,16 +20,19 @@ TODO
 ### Onderzoek
 
 **E-mail Encryption**
+
 -       Het versleutelen van e-mails zorgt ervoor dat het bericht alleen leesbaar is voor de gekozen ontvanger. Om dit te doen wordt de leesbare tekst omgezet naar ciphertekst door middel van een versleutelingsalgoritme en een sleutel.
 
 -       Bij het versleutelen met asymmetrische Public Key versleuteling wordt de ontvanger zijn publieke sleutel gebruikt om het bericht te versleutelen. Omdat de publieke en private sleutel wiskundig zijn gekoppeld kan enkel de houder van de private sleutel het bericht ontsleutelen.
 
 **E-mail Signing**
+
 -       Door e-mails te ondertekenen kan de ontvanger zowel de afzender als de inhoud verifiëren. Op deze manier is er meer zekerheid dat er niet geknoeid is met de inhoud en de afzender legitiem is.
 
 -       Het ondertekenen van een e-mail gebruikt ook Public Key Encryption maar andersom, de verzender maakt een digitale handtekening met zijn private sleutel, de ontvanger kan deze dan verifiëren met de verzender zijn publieke sleutel.
 
 **Public Key Infrastructure**
+
 -       Een combinatie van hardware, software en regels die samen een robuust framework geven om confidentieel berichten uit te wisselen. Er wordt gebruikt gemaakt van een publieke sleutel, zichtbaar voor iedereen, en een private sleutel, deze moet altijd privé blijven.
 
 **Tools**
