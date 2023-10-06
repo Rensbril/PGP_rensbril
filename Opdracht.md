@@ -1,4 +1,22 @@
+# Digitale Beveiliging van E-mail Communicatie
 
+## Inleiding
+TODO
+
+## Inhoudsopgave
+1. [Onderzoek](#onderzoek)
+   - [E-mail Encryption](#e-mail-encryption)
+   - [E-mail Signing](#e-mail-signing)
+   - [Public Key Infrastructure](#public-key-infrastructure)
+   - [Tools](#tools)
+2. [Opdracht](#opdracht)
+   - [Aanmaken sleutel](#aanmaken-sleutel)
+   - [Delen van de sleutel](#delen-van-de-sleutel)
+   - [Ophalen sleutel klasgenoot](#ophalen-sleutel-klasgenoot)
+   - [Sleutels checken + Fingerprint](#sleutels-checken-+-fingerprint)
+   - [Bericht versleutelen en ondertekenen](#bericht-versleutelen-en-ondertekenen)
+   - [Ontsleutelen bericht](#ontsleutelen-bericht)
+  
 ### Onderzoek
 
 **E-mail Encryption**
