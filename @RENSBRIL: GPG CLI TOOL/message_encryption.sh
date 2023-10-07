@@ -63,7 +63,7 @@ function decrypt_message {
     fi
 
     # Ontsleutel het bestand
-    gpg --decrypt $FILE | tee decrypted_message_$(date +%F_%T).txt
+    gpg --decrypt $FILE | tee decrypted/decrypted_message_$(date +%F_%T).txt
     echo "Bericht ontsleuteld en opgeslagen in de messages map."
     exit 0
 }
