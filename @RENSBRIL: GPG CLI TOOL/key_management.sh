@@ -58,18 +58,19 @@ function show_key_pair {
 
 function key_management {
     while true; do
-        dialog --clear \
-               --backtitle "Sleutelbeheer" \
-               --title "Maak een keuze" \
-               --menu "Kies een van de volgende opties:" \
-               15 40 5 \
-               "1" "Genereer sleutelpaar" \
-               "2" "Importeer sleutelpaar" \
-               "3" "Exporteer sleutelpaar" \
-               "4" "Verwijder sleutelpaar" \
-               "5" "Toon sleutelpaar" \
-               "6" "Upload sleutelpaar" \
-               2>&1 >/dev/tty
+        CHOICE=$(dialog --clear \
+                        --backtitle "Sleutelbeheer" \
+                        --title "Maak een keuze" \
+                        --menu "Kies een van de volgende opties:" \
+                        15 40 5 \
+                        "1" "Genereer sleutelpaar" \
+                        "2" "Importeer sleutelpaar" \
+                        "3" "Exporteer sleutelpaar" \
+                        "4" "Verwijder sleutelpaar" \
+                        "5" "Toon sleutelpaar" \
+                        "6" "Upload sleutelpaar" \
+                        2>&1 >/dev/tty)
+
         # Controleer de exit status van het dialog commando
         local EXIT_STATUS=$?
         # Als de exit status 1 is, heeft de gebruiker op "Cancel" geklikt
@@ -77,9 +78,6 @@ function key_management {
             # Breek de while lus en keer terug naar het hoofdmenu of sluit het script af
             break
         fi
-
-        # Lees de keuze van de gebruiker uit de uitvoer van het dialog commando
-        local CHOICE=$(tail -n 1 /tmp/dialog-output.$$)
         
         clear
         case $CHOICE in
@@ -107,3 +105,4 @@ function key_management {
         esac
     done
 }
+

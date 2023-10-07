@@ -24,7 +24,7 @@ function show_about {
     Made by:        
      ^ ^              
     (O,O)             
-    (   ) @Rensbril    
+    (   ) ヽ༼ ຈل͜ຈ @Rensbril Ɵ͆ل͜Ɵ͆ ༽ﾉ    
     -"-"--------------
 EOF
 }
