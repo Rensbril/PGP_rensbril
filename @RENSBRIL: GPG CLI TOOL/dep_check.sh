@@ -12,13 +12,20 @@ install_dependencies() {
     echo
     if [[ $REPLY =~ ^[Yy]$ ]]; then
         # Instructie voor installeren afhankelijkheden
-        echo "GnuPG (GPG)"
-        echo "Mac gebruikers: installeer gpg met 'brew install gnupg'"
-        echo "Linux gebruikers: installeer gpg met 'sudo apt install gnupg'"
+        cat << EOF
+        # Instructie voor installeren afhankelijkheden
+        GnuPG (GPG)
+        Mac gebruikers: installeer gpg met 'brew install gnupg'
+        Linux gebruikers: installeer gpg met 'sudo apt install gnupg'
 
-        echo "Dialog"
-        echo "Mac gebruikers: installeer dialog met 'brew install dialog'"
-        echo "Linux gebruikers: installeer dialog met 'sudo apt install dialog'"
+        Dialog
+        Mac gebruikers: installeer dialog met 'brew install dialog'
+        Linux gebruikers: installeer dialog met 'sudo apt install dialog'
+
+        jq
+        Mac gebruikers: installeer jq met 'brew install jq'
+        Linux gebruikers: installeer jq met 'sudo apt install jq'
+EOF
     else
         exit 1
     fi

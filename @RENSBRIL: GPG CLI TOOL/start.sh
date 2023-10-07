@@ -4,35 +4,14 @@
 source ./key_management.sh
 source ./message_encryption.sh
 source ./dep_check.sh
+source ./menu_content.sh
 
-function print_ascii_art {
-    echo ".----. .----..-. .-. .----.      .----.  .---. .----.     .---.  .----.  .----. .-.   "
-    echo "| {}  }| {_  |  \`| |{ {__        | {}  }/   __}| {}  }   {_   _}/  {}  \/  {}  \| |   "
-    echo "| .-. \| {__ | |\  |.-._} }      | .--' \  {_ }| .--'      | |  \      /\      /| \`--."
-    echo "\`-' \`-'\`----'\`-' \`-'\`----'       \`-'     \`---' \`-'         \`-'   \`----'  \`----' \`----'"
-}
 
-function show_about {
-    clear
-    print_ascii_art
-    echo "GnuPG Tool"
-    echo "Gebruik: ./start.sh"
-    echo "Navigeer met de pijltjestoetsen en druk op enter om een optie te selecteren."
-    echo ""
-
-    cat << EOF
-    Made by:        
-     ^ ^              
-    (O,O)             
-    (   ) ヽ༼ ຈل͜ຈ @Rensbril Ɵ͆ل͜Ɵ͆ ༽ﾉ    
-    -"-"--------------
-EOF
-}
 
 function main_menu {
     while true; do
         CHOICE=$(dialog --clear \
-                        --backtitle "GnuPG Tool" \
+                        --backtitle "GnuPG CLI Tool by @Rensbril" \
                         --title "Hoofdmenu" \
                         --menu "Kies een van de volgende opties:" \
                         15 40 5 \
@@ -56,7 +35,6 @@ function main_menu {
                 ;;
             4)
                 show_about
-                exit 0
                 ;;
             5)
                 exit 0
@@ -71,7 +49,7 @@ function main_menu {
 # Als er geen command line argumenten zijn, toon dan het hoofdmenu
 if [[ $# -eq 0 ]] ; then
     print_ascii_art
-    sleep 2
+    sleep 1.5
     main_menu
     exit 0
 fi

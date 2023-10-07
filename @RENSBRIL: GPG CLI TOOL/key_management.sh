@@ -37,8 +37,17 @@ function import_key_pair {
 
 function export_key_pair {
     echo "Exporteer sleutelpaar"
-    # TODO
-    exit 0
+    read -p "Voer het e-mailadres in van de sleutel die je wilt exporteren: " email
+    read -p "Voer de naam in van het bestand waarin je de sleutel wilt opslaan: " filename
+    check_if_key_exists $email
+    if [[ $? -eq 0 ]]; then
+        echo "Sleutelpaar wordt geëxporteerd...."
+        gpg --export -a $email > $filename.asc
+        sleep 3
+    else
+        echo "Sleutelpaar bestaat niet"
+        exit 1
+    fi
 }
 
 function delete_key_pair {
@@ -73,9 +82,8 @@ function key_management {
 
         # Controleer de exit status van het dialog commando
         local EXIT_STATUS=$?
-        # Als de exit status 1 is, heeft de gebruiker op "Cancel" geklikt
+        # Als de exit status 1 is, cancel script
         if [[ $EXIT_STATUS -eq 1 ]]; then
-            # Breek de while lus en keer terug naar het hoofdmenu of sluit het script af
             break
         fi
         
