@@ -9,7 +9,7 @@ Dat gezegd hebbende, laten we aan de slag gaan! 🚀
 
 ## 🚀 Aan de slag 🚀
 
-Om te beginnen, zorg ervoor dat je de benodigde afhankelijkheden hebt geïnstalleerd. Dit script zal controleren of de benodigde tools zijn geïnstalleerd en je helpen bij het installeren als dat nodig is.
+Om te beginnen, zorg ervoor dat je de benodigde [afhankelijkheden](#afhankelijkheden) hebt geïnstalleerd. Dit script zal controleren of de benodigde tools zijn geïnstalleerd en je helpen bij het installeren als dat nodig is.
 
 Start de tool door het volgende commando uit te voeren in de directory waar je het script hebt opgeslagen:
 
