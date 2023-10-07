@@ -1,3 +1,6 @@
 messages/*
 settings.json
 decrypted/*
+
+@RENSBRIL: GPG CLI TOOL/decrypted/*
+@RENSBRIL: GPG CLI TOOL/messages/*
