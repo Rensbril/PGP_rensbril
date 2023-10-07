@@ -1,6 +1,11 @@
 # 🔐 Sleutelbeheer en Berichtversleuteling Tool 🔐
 
-Welkom bij deze geweldige tool voor sleutelbeheer en berichtversleuteling! Met deze tool kun je op een gebruiksvriendelijke en efficiënte manier sleutelparen genereren, importeren, exporteren, verwijderen, en bekijken. Je kunt ook berichten versleutelen en ontsleutelen, allemaal vanuit een gemakkelijk te gebruiken command-line interface!
+Welkom bij deze geweldige tool voor sleutelbeheer en berichtversleuteling! Met deze tool kun je op een gebruiksvriendelijke en efficiënte manier sleutelparen genereren, importeren, exporteren, verwijderen, en bekijken. Je kunt ook berichten versleutelen en ontsleutelen, allemaal vanuit een gemakkelijk te gebruiken command-line interface!  
+
+**Disclaimer**: Deze tool is gemaakt voor educatieve doeleinden en is niet bedoeld voor gebruik in productieomgevingen. Gebruik deze tool op eigen risico.  
+
+Dat gezegd hebbende, laten we aan de slag gaan! 🚀  
+ ▌║█║▌│║▌│║▌║▌█║@Rensbril ▌│║▌║▌│║║▌█║▌║█
 
 ## 🚀 Aan de slag 🚀
 
