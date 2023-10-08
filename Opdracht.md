@@ -1,8 +1,5 @@
 # Digitale Beveiliging van E-mail Communicatie
 
-## Inleiding
-TODO
-
 ## Inhoudsopgave
 1. [Onderzoek](#onderzoek)
    - [E-mail Encryption](#E-mail-encryption)
