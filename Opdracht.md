@@ -77,7 +77,7 @@ De laatste string getallen is mijn keyID
 output:
 
 ```bash
-❯ gpg --send-keys --keyserver keys.openpgp.org 9C247C57F171EE561B072D2F5E353E03ACDC134F
+> gpg --send-keys --keyserver keys.openpgp.org 9C247C57F171EE561B072D2F5E353E03ACDC134F
 gpg: sending key 5E353E03ACDC134F to hkp://keys.openpgp.org
 ```
 
@@ -108,7 +108,7 @@ Om de sleutels te checken en de fingerprint te zien gebruiken we de commando's:
 Output:
 1. 
 ```bash
-❯ gpg --list-keys
+> gpg --list-keys
 
 pub   ed25519 2023-10-06 [SC] [expires: 2026-10-05]
       361E3525B8772BDB37091BB3BC14D1AA1E8BC4EF
@@ -123,7 +123,7 @@ sub   cv25519 2023-10-06 [E] [expires: 2026-10-05]
 
 2. 
 ```bash
-❯ gpg --fingerprint 518721@student.saxion.nl
+> gpg --fingerprint 518721@student.saxion.nl
 pub   ed25519 2023-10-06 [SC] [expires: 2026-10-05]
       361E 3525 B877 2BDB 3709  1BB3 BC14 D1AA 1E8B C4EF
 uid           [ unknown] Sander <518721@student.saxion.nl>
@@ -186,7 +186,7 @@ Het ontsleutelen is nog makkelijker dan het versleutelen:
 
 Resultaat:
 ```txt
-❯ gpg --decrypt message.txt.asc
+> gpg --decrypt message.txt.asc
 
 gpg: encrypted with cv25519 key, ID 3ECD815FA7F43CEA, created 2023-10-06
       "Rens Bril <519649@student.saxion.nl>"
