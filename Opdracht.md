@@ -30,15 +30,15 @@ TODO
 
 -       Door e-mails te ondertekenen kan de ontvanger zowel de afzender als de inhoud verifiëren. Op deze manier is er meer zekerheid dat er niet geknoeid is met de inhoud en de afzender legitiem is.
 
--       Het ondertekenen van een e-mail gebruikt ook Public Key Encryption maar andersom, de verzender maakt een digitale handtekening met zijn private sleutel, de ontvanger kan deze dan verifiëren met de verzender zijn publieke sleutel.
+-       Het ondertekenen van een e-mail gebruikt ook Public Key Encryption maar andersom, de verzender maakt een digitale handtekening met zijn private sleutel, de ontvanger kan deze dan verifiëren met de verzender zijn publieke sleutel.  
 
 #### Public Key Infrastructure
 
 -       Een combinatie van hardware, software en regels die samen een robuust framework geven om confidentieel berichten uit te wisselen. Er wordt gebruikt gemaakt van een publieke sleutel, zichtbaar voor iedereen, en een private sleutel, deze moet altijd privé blijven.
 
 #### Tools
--       **PGP:** Een programma dat men in staat stelt data te ver- en ontsleutelen. Wordt vaak gebruikt om e-mails te beveiligen.
--       **GPG:** Een open-source alternatief voor PGP, wordt vaak gebruikt voor beveiligen van data en communicatie.
+-       **PGP:** Een programma dat men in staat stelt data te ver- en ontsleutelen. Wordt vaak gebruikt om e-mails te beveiligen.  
+-       **GPG:** Een open-source alternatief voor PGP, wordt vaak gebruikt voor beveiligen van data en communicatie.  
 -       **S/MIME:** Biedt publieke sleutel encryptie als plugin voor email clients.
 
 
@@ -136,8 +136,8 @@ sub   cv25519 2023-10-06 [E] [expires: 2026-10-05]
 
 #### Bericht versleutelen en ondertekenen
 
-Eerst maken we een message.txt en schrijven een leuk bericht:
-`touch message.txt`
+Eerst maken we een message.txt en schrijven een leuk bericht:  
+`touch message.txt`  
 `nano message.txt`
 
 Originele bericht: 
