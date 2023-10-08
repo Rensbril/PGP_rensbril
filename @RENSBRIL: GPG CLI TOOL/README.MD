@@ -35,6 +35,6 @@ Volg de aanwijzingen op het scherm om sleutelparen te beheren en berichten te ve
 
 ## 🛠️ Afhankelijkheden 🛠️
 
-Zorg ervoor dat `gpg` en `dialog` zijn geïnstalleerd op je systeem. Het script zal controleren of deze tools zijn geïnstalleerd en je helpen bij het installeren als dat nodig is.
+Zorg ervoor dat `gpg`, `dialog` en `jq` zijn geïnstalleerd op je systeem. Het script zal controleren of deze tools zijn geïnstalleerd en je helpen bij het installeren als dat nodig is.
 
 Veel plezier met het verkennen en gebruiken van deze tool voor sleutelbeheer en berichtversleuteling! 🔐🎉
