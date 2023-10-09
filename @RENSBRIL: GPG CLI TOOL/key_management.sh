@@ -17,13 +17,7 @@ function check_if_key_exists {
 function generate_key_pair {
     echo "Genereer sleutelpaar"
     read -p "Voer je e-mailadres in: " email
-    check_if_key_exists $email
-    if [[ $? -eq 0 ]]; then
-        echo "Sleutelpaar bestaat al"
-    else
-        echo "Sleutelpaar bestaat nog niet"
-        gpg --gen-key
-    fi
+    gpg --full-generate-key
     exit 0
 }
 
