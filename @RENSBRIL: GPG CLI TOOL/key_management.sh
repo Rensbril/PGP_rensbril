@@ -16,7 +16,6 @@ function check_if_key_exists {
 
 function generate_key_pair {
     echo "Genereer sleutelpaar"
-    read -p "Voer je e-mailadres in: " email
     gpg --full-generate-key
     exit 0
 }
